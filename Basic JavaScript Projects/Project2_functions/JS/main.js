@@ -1,5 +1,6 @@
-var i = "I think I might be getting this JavaScript stuff.";
-var b = " Although I am still confused about a lot."
-    document.write(i+b);
+function conFunction() {  //naming function
+    var words = "OMG! Look,"; //variable name is "words"
+    words += " It works!"; 
+    document.getElementById("con").innerHTML = words; //"con" is the id in HTML / "words" is the variable
 
-
+}
