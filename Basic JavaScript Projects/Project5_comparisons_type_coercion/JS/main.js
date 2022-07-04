@@ -38,32 +38,44 @@ function e_true() { //should return true
     document.getElementById("Equal_True").innerHTML = [200==200];
 }
 
-function e_false() { //should return false
-    document.getElementById("Equal_False").innerHTML = [300==400];
+function e_false() { //should return false - ENDS ON LINE 29
+    document.getElementById("Equal_False").innerHTML = [300==400]; 
 }
 
-// ===
+// !
 
-x === 50;
-y === 50;
+function function_not() { //line 31 - named function
+    document.getElementById("Not").innerHTML = !(45>30); //result false
+}
+
+function function_true() { //line 33 - named function
+    document.getElementById("Not2").innerHTML = !(6>9); //result true
+}
+
+// === 
+
+x = 50
+y = 50
 document.write(x===y); //result should be true
 
 document.write("<br>"); //line break
 
-x = 100;
-y = "10";
+x = 100 
+y = "10"
 document.write(x===y); //result should be false, data type don't match, value doesn't match
+
+
 
 document.write("<br>"); //line break
 
-x = "ten"; //result should be false, data types don't match
-y = 10;
+x = "ten" //result should be false, data types don't match
+y = 10
 document.write(x===y);
 
 document.write("<br>"); //line break
 
-x = "5"; //result should be false, values don't match
-x = "10";
+x = "5" //result should be false, values don't match
+x = "10"
 document.write(x===y); //result should be false
 
 document.write("<br>");
@@ -85,3 +97,4 @@ document.write(9>4 || 8>9); //result should be true, one is true
 document.write("<br>");
 
 document.write(2>4 || 5>9); //result would be false, neither are true
+
