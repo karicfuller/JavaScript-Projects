@@ -40,9 +40,9 @@ Added_Numbers2();
 
 //Conditional Statements
 
-function the_Date() {
-    if (new Date().getHours() < 20) {
-        document.getElementById("condition").innerHTML = "Good day!";
+function the_Date() { //name function "the_Date"
+    if (new Date().getHours() < 17) { //if it's before 5pm it's afternoon
+        document.getElementById("condition").innerHTML = "Good afternoon!";
     }
 }
 
@@ -63,17 +63,17 @@ function The_Age() { //named function "The_Age"
 
 //else/if Statements
 
-function Time_function () { 
+function Time_function () { //named function "Time_function"
     var Time = new Date().getHours();
     var Reply;
-    if (Time < 12 == Time > 0) {
+    if (Time < 12 == Time > 0) { //If it is before 12, it is morning
         Reply = "It is morning time!";
     }
-    else if (Time >= 12 == Time < 18) {
+    else if (Time >= 12 == Time < 18) { //If it is between noon and 6 it is afternoon
         Reply = "It is afternoon.";
     }
     else {
-        Reply = "It is evening time.";
+        Reply = "It is evening time."; //if it's neither of the above time frames, it's evening
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
