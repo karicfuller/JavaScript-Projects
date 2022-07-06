@@ -32,7 +32,7 @@ function Added_Numbers1() {
     document.write(x + 10 + "<br>") //result 40
 }
 function Added_Numbers2() {
-    console.log(x + 10); //nothing, error no variable value
+    console.log(y + 30); //nothing, error no variable value
 }
 Added_Numbers1();
 Added_Numbers2();
