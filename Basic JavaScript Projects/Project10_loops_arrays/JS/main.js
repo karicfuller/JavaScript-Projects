@@ -10,14 +10,6 @@ function Call_Loop() {
     document.getElementById("Loop").innerHTML = digit;
 }
 
-//string length property
-
-function get_Length() {
-    var words = "How Are You?";
-    var how_many = words.length;
-    document.getElementById("Length").innerHTML = how_many;
-}
-
 //for loop
 
 var the_Instruments = ["Bass", "Drums", "Cymbal", "Bongo Drums", "Triangle"];
@@ -42,53 +34,12 @@ function array_Function() {
     document.getElementById("Array").innerHTML = "I love to " + activity[3] + "!";
 }
 
-//const keyword
+//let keyword
 
-function constant_function() {
-    const the_car = {make: "Honda", model: "Accord", color: "dark green"};
-    the_car.color = "red";
-    the_car.price = "$25,000";
-    the_car.year = 2004;
-    document.getElementById("Constant").innerHTML = "The car was a " + the_car.year + ", " + the_car.model + " and was the color " + the_car.color + ".";
-}
-
-//let keyword Step: 215
-
-var x = 82;
-document.write(x);
+let a = 82;
 {
-    let x = 33;
-    document.write("<br>" + x);
+    let a = 33;
 }
-document.write("<br>" + x);
+document.getElementById("let_Key").innerHTML = a;
 
-//return statement
-
-function myFunction() {
-    return Math.PI;
-}
-document.getElementById("PI").innerHTML = Math.PI;
-
-//object assignment
-
-let him = {
-    firstName: "Oscar ",
-    lastName: "Prado ",
-    age: 46 ,
-    description : function() {
-        return "My friend's name and age is " + this.firstName + this.lastName + this.age; 
-    } 
-};
-document.getElementById("my_Friend").innerHTML = him.description();
-
-//break statement
-
-let text = "";
-for (let i = 0; i < 10; i++) {
-    if (i === 3) {break;}
-    text += "The number " + i + "<br>";
-}
-document.getElementById("the_Break").innerHTML= text;
-
-//continue statement
 
