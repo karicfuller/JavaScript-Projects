@@ -21,7 +21,7 @@ function Input_Digit(digit) {
     } else {
         //this overwrites Display_Value if the current value is 0
         //otherwise it adds onto it
-        Calculator.Display_Value = Display_Value === 'O' ? digit : Display_Value + digit;
+        Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
 }
 
@@ -103,7 +103,7 @@ keys.addEventListener('click', (event) => {
     if (!target.matches('button')) {
         return;
     }
-    if (target.classList.contains('operartor')) {
+    if (target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
         return;
