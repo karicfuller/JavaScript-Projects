@@ -24,7 +24,7 @@ html {
     font-size: 5rem;
     height: 80px;
     border: none;
-    background-color: black;
+    background-color: lightpink;
     color: white;
     text-align: right;
     padding-right: 20px;
@@ -59,13 +59,13 @@ button:hover {
 }
 
 .all-clear {
-    background-color: red;
+    background-color: rgba(173, 76, 118, 0.586);
     border-color: darkslategray;
     color: #ffffff;
 }
 
 .equal-sign {
-    background-color: blue;
+    background-color: palevioletred;
     border-color: darkslategray;
     color: #fff;
     height: 100%;
@@ -73,7 +73,7 @@ button:hover {
 }
 
 .equal-sign:hover {
-    background-color: darkblue;
+    background-color: pink;
 }
 
 .calculator-keys {
