@@ -46,3 +46,24 @@
     width: 100px;
     height: 40px;
 }
+
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: palevioletred;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: mediumseagreen;
+}
+
+
