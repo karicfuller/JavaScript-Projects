@@ -15,7 +15,7 @@ function Input_Digit(digit) {
     const {Display_Value, Wait_Second_Operand } = Calculator;
     //this checks if the Wait_Second_Operand is true and sets Display_Value
     //to the key that was clicked on
-    if(Wait_Second_Operand === true) {
+    if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
         Calculator.Wait_Second_Operand = false;
     } else {
@@ -59,7 +59,7 @@ function Handle_Operator(Next_Operator) {
         //operator is executed
         let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         //here we add a fixed amount of numbers after the decimal
-        result = Number(result)toFixed (9);
+        result = Number(result).toFixed (9);
         //this will remove any trailing 0's
         result = (result *1).toString();
         Calculator.Display_Value = parseFloat(result);
