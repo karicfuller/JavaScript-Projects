@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+            var Friend = "<friend>" +
+                "<first_name>Oscar</first_name>" +
+                "<last_name>Prado</last_name>" +
+                "<age>46</age>" +
+                "<birth_month>June</birth_month>" +
+                "<date_of_birth>23</date_of_birth>" +
+                "<birth_year>1976</birth_year>" +
+                "</friend>";
+            XML_Parser = new DOMParser();
+            XML_Document = XML_Parser.parseFromString(Friend,"text/xml");
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("first_name") [0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
