@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Challenge</title>
+    </head>
+        <script>
+            function validateForm() {
+                let x = document.forms ["myForm"] ["phone"].value;
+                if (x=="") {
+                    alert("Please provide your phone number");
+                    return false;
+                }
+            }
+        </script>
+
+    <body>
+        <h2>HTML Forms</h2>
+
+        <form name="myForm" action="/action_page.php"
+            onsubmit="return validateForm()" method="post">
+            <label for="phone">Phone Number</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
