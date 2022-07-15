@@ -10,7 +10,7 @@
         <script>
             var Counter = React.createClass({
                 render: function() {
-                    var time_Passed = Math.round(this.props.time_passed / 100);
+                    var time_Passed = Math.round(this.props.time_Passed / 100);
                     var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0');
                     var text = 'My React code started running ' +
                         seconds_Passed + ' seconds ago!';
