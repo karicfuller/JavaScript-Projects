@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JSON.parse() Assignment</title>
+    </head>
+    <body>
+        <h2>JSON.parse() Example</h2>
+        <p>This is an example of using JSON.parse() which returns a JavaScript Object</p>
+        <p id="jparse"></p>
+
+        <script>
+            var obj = JSON.parse('{"firstName": "Oscar", "lastName": "Prado"}');
+            document.getElementById("jparse").innerHTML = obj.firstName;
+        </script>
+
+    </body>
+</html>
