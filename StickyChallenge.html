@@ -7,21 +7,43 @@
             div.sticky {
                 position: -webkit-sticky;
                 position: sticky;
-                top: 0;
+                bottom: 0;
                 background-color: palevioletred;
                 padding: 50px;
                 font-size: 20px;
+            }
+
+            .button {
+                background-color: palevioletred;
+                border: none;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 4px;
+                cursor: pointer;
+                position: fixed;
+                bottom: 5px;
+                right: 10px;
+                border-radius: 50%;
             }
         </style>
     </head>
 
     <body>
+        <h2>Check This Out!</h2>
+        <div class="sticky"></div>
+        <a href="#" class="button">Click On Me!</a>
+
+        <button class="open-button" onclick="openForm()">Contact Information</button>
+
         <h2>I had no idea what a "Sticky Element" is. Now I know!<br>
-            Scroll Down to See the Effect</h2>
-            <p>Scroll down this page to see how sticky positioning works!</p>
-            <div class="sticky">It's CRAZY! I will stick to the screen when you reach my position.</div>
-            <h2>You can scroll back up to "remove" the sticky thingy...</h2>
-            
+            Scroll Down to See the Effect!</h2>
+            <p>Check out the button at the bottom! Scroll down this page to see how sticky positioning works!</p>
+        
+
             <h4>And now for the really interesting stuff...</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
@@ -33,7 +55,7 @@
                 will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum<br>
                 is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<br>
                 content here', making it look like readable English.</p><br>
-            
+
             <h4>And then there's this...</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
@@ -46,5 +68,7 @@
                 is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<br>
                 content here', making it look like readable English.</p><br>
             <h3>Pretty interesting stuff, right?</h3>                
+
+
     </body>
 </html>
