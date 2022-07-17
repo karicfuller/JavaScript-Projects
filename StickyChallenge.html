@@ -13,36 +13,89 @@
                 font-size: 20px;
             }
 
-            .button {
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+            * {box-sizing: border-box;}
+
+            .open-button {
                 background-color: palevioletred;
-                border: none;
                 color: white;
-                padding: 15px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 4px;
+                padding: 16px 20px;
+                border: none;
                 cursor: pointer;
+                opacity: 0.8;
                 position: fixed;
-                bottom: 5px;
-                right: 10px;
-                border-radius: 50%;
+                bottom: 23px;
+                right: 28px;
+                width: 280px;
             }
+
+            .form-popup {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 15px;
+                border: 3px solid black;
+                z-index: 9;
+            }
+
+            .form-container {
+                max-width: 300px;
+                padding: 10px;
+                background-color: white;
+            }
+
+            .form-container input[type=text] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background-color: lightgray;
+            }
+
+            .form-container .btn {
+                background-color: lightpink;
+                color: black;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
         </style>
     </head>
 
     <body>
         <h2>Check This Out!</h2>
         <div class="sticky"></div>
-        <a href="#" class="button">Click On Me!</a>
-
         <button class="open-button" onclick="openForm()">Contact Information</button>
 
         <h2>I had no idea what a "Sticky Element" is. Now I know!<br>
             Scroll Down to See the Effect!</h2>
             <p>Check out the button at the bottom! Scroll down this page to see how sticky positioning works!</p>
         
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php"
+            class="form-container">
+            <h1>Contact Info</h1>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="First Name" name="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="Last Name" name="lname" required>
+
+            <label for="email">Email Address</label>
+            <input type="text" placeholder="Email Address" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" placeholder="Phone Number" name="phone" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>       
+        </div>
 
             <h4>And now for the really interesting stuff...</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
@@ -68,7 +121,13 @@
                 is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<br>
                 content here', making it look like readable English.</p><br>
             <h3>Pretty interesting stuff, right?</h3>                
-
-
+        <script>
+            function openForm () {
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm () {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
     </body>
 </html>
