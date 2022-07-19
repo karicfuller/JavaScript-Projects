@@ -45,6 +45,12 @@ function show() {
     document.getElementById('todos').innerHTML = html;
 }
 
+/* this tells the browser how to display the todo
+array after an item has been removed */
+var buttons = document.getElementsByClassName('remove');
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', remove);
+}
 
 /* this displays the inputed task */
 document.getElementById('add').addEventListener('click', add);
@@ -63,11 +69,4 @@ function remove(){
 
     return false;
 
-}
-
-/* this tells the browser how to display the todo
-array after an item has been removed */
-var buttons = document.getElementsByClassName('remove');
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', remove);
 }
