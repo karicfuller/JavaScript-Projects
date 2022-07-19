@@ -44,10 +44,13 @@ function show() {
     /* this displays the task as a list */
     document.getElementById('todos').innerHTML = html;
 }
+
+
 /* this displays the inputed task */
 document.getElementById('add').addEventListener('click', add);
 /* this will keep the inputs displayed permantaly on the screen*/
 show();
+
 
 /* this creates the functionality of removing a todo item from the array*/
 function remove(){
