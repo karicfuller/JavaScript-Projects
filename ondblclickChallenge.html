@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ondblclick Challenge</title>
+    </head>
+
+    <body>
+        <p ondblclick="clickme()">Double-click on this sentence to reveal a secret...</p>
+
+        <p id="click"></p>
+
+    <script>
+        function clickme() {
+            document.getElementById("click").innerHTML = "I figured out how to do this double click thing!"
+        }
+    </script>
+
+    </body>
+</html>
